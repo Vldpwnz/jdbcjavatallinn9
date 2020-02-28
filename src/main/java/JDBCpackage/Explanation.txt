@@ -1,1 +1,2 @@
 Added all methods that was needed by assingment works fine!
+adding new line to txt file
