@@ -5,10 +5,13 @@ import java.sql.*;
 public class TimetableController {
 
     DatabaseHandler dbHandler = new DatabaseHandler();
-    Statement statement = dbHandler.createStatement();
+    Statement statement;
 
 
     public void listOfTimetable(){
+
+        statement = dbHandler.createStatement();
+
         try{
             ResultSet result = statement.executeQuery("SELECT * FROM timetable");
 

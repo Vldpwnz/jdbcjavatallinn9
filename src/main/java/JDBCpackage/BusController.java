@@ -8,9 +8,11 @@ import java.sql.Timestamp;
 public class BusController {
 
     DatabaseHandler dbHandler = new DatabaseHandler();
-    Statement statement = dbHandler.createStatement();
+    Statement statement;
 
     public void listOfBuses(){
+        statement = dbHandler.createStatement();
+
         try{
             ResultSet resultForBuses = statement.executeQuery("SELECT * FROM buses");
 

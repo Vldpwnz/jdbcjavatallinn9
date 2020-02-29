@@ -8,9 +8,12 @@ import java.sql.Time;
 public class PassengersController {
 
     DatabaseHandler dbHandler = new DatabaseHandler();
-    Statement statement =dbHandler.createStatement();
+    Statement statement;
 
     public void listOfPassengers(){
+
+        statement =dbHandler.createStatement();
+
         try{
             ResultSet result = statement.executeQuery("SELECT  * FROM passengers");
 
