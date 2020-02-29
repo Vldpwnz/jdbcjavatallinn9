@@ -1,2 +1,4 @@
-Added all methods that was needed by assingment works fine!
-adding new line to txt file
+1.Added all methods that was needed by assingment works fine!;
+2.adding new line to txt file;
+3.to avoid duplicates use another boolean method to check if its phone number exists already, using select statement
+check if person with this phone number exists;
