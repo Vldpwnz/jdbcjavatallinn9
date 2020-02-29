@@ -11,10 +11,9 @@ public class Main {
         PassengersController passengersController = new PassengersController();
         TimetableController timetableController = new TimetableController();
         Locations locations = new Locations();
-        Prepeare prepeare = new Prepeare();
+        Prepare prepare = new Prepare();
 
-        prepeare.prepearedStatement("Vlad", "punane", "5675859", 43);
-
+        prepare.preparedStatementInsertion("Vlad", "punane", "5675859", 43);
 
         driverController.listAllDrivers();
         System.out.println("\n***************************************************\n");

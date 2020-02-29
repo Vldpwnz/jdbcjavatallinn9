@@ -24,13 +24,8 @@ public class BusController {
                 Timestamp purchasedOn = resultForBuses.getTimestamp("purchasedOn");
                 int driverID = resultForBuses.getInt("driverID");
                 Timestamp createdOn = resultForBuses.getTimestamp("createdOn");
-
-                System.out.println(id + " " +
-                        busNumber + " " +
-                        driverID + " " +
-                        fuel + " " +
-                        purchasedOn + " " +
-                        createdOn);
+                String result = id + " " + busNumber + " " + driverID + " " + fuel + " " + purchasedOn + " " + createdOn;
+                System.out.println(result);
             }
             statement.close();
             dbHandler.closeConnection();
